@@ -18,25 +18,48 @@ public function onCommand(CommandSender $sender, Command $command, $label, array
         switch(strtolower($command->getName())){
             case "Jokes":
             if($sender instanceof Player(){
-            $sender->sendMessage($this->prefix . "What kind of joke?);
-            $this->getFirstMessage;
-            case $this->FirstMessage = "Knock-Knock-Joke;
+            $sender->sendMessage($this->prefix . "What kind of joke? \n Your response choices: Knock-Knock-Joke);
+            $this->getMessage;
+            if($this->Message = "Knock-Knock-Joke"){
             $chance = rand(0,9);
-			      if($chance = 1){
-			      }
-			      if($chance = 2){
-			      }
-			      if($chance = 3){
-			      }
-			      if($chance = 4){
-			      }
-			      if($chance = 5){
-			      }
-			      if($chance = 6){
-			      }
-			      if($chance = 7){
-			      }
-			      if($chance = 8){
-			      }
-			      if($chance = 9){
-			      }
+            	switch($chance){
+			      case 1:
+			      	$sender->sendMessage($this->prefix . "Ho-ho \n Your response choices: Ho-ho who? or Cancel Joke");
+			      	$this->getMessage;
+			      	if($this->Message = "Ho-ho who?"){
+			      	$sender->sendMessage($this->prefix . "You know, your Santa impression could use a little work.");
+			      	}
+			      	else if(this->Message = "Cancel Joke"){
+			      		$sender->sendMessage($this->prefix . "Joke cancelled. Use the command /jokes to start a new joke.")
+			      	}
+			      	
+			      break;
+			      
+			      case 2:
+			      break;
+			      
+			      case 3:
+			      break;
+			     
+			      case 4:
+			      break;
+			      
+			      case 5:
+			      break;
+			      
+			      case 6:
+			      break;
+			      
+			      case 7:
+			      break;
+			     
+			      case 8:
+			      break;
+			     
+			      case 9:
+			      break;
+            		}
+            	}	
+            }
+           }
+        }
