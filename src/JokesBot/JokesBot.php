@@ -21,6 +21,9 @@ public $this->prefix = C::BLUE . "[JokesBot]" . C::WHITE . "-" . C::BLACK . " ";
         			 $sender->sendMessage($this->prefix . "What kind of joke? \n Your response choices: Knock Knock Joke);
             			$this->getMessage;
             			if($this->Message = "Knock Knock Joke"){
+            				$sender->sendMessage($this->prefix . "Knock Knock! \n Your response choice: Who's there?");
+            				$this->getMessage;
+            				if($this->Message = "Who's there?"){
             				$chance = rand(0,9);
             				switch($chance){
 			      			case 1:
@@ -36,9 +39,27 @@ public $this->prefix = C::BLUE . "[JokesBot]" . C::WHITE . "-" . C::BLACK . " ";
 			      			break;
 			      
 			      			case 2:
+			      			$sender->sendMessage($this->prefix . "Hatch \n Your response choices: Hatch who? or Cancel Joke");
+			      			$this->getMessage;
+			      			if($this->Message = "Hatch who?"){
+			      				$sender->sendMessage($this->prefix . "Bless you!");
+			      				}
+			      			else if(this->Message = "Cancel Joke"){
+			      				$sender->sendMessage($this->prefix . "Joke cancelled. Use the command /jokes to start a new joke.")
+			      				}
+			      	
 			      			break;
 			      
 			      			case 3:
+			      			$sender->sendMessage($this->prefix . "Doris \n Your response choices: Doris who? or Cancel Joke");
+			      			$this->getMessage;
+			      			if($this->Message = "Doris who?"){
+			      				$sender->sendMessage($this->prefix . "Doris locked; that's why I had to knock!");
+			      				}
+			      			else if(this->Message = "Cancel Joke"){
+			      				$sender->sendMessage($this->prefix . "Joke cancelled. Use the command /jokes to start a new joke.")
+			      				}
+			      	
 			      			break;
 			     
 			      			case 4:
@@ -51,6 +72,7 @@ public $this->prefix = C::BLUE . "[JokesBot]" . C::WHITE . "-" . C::BLACK . " ";
 			      			break;
 			      
 			      			case 7:
+			      			
 			      			break;
 			     
 			      			case 8:
@@ -63,3 +85,4 @@ public $this->prefix = C::BLUE . "[JokesBot]" . C::WHITE . "-" . C::BLACK . " ";
             			}
            		}
         	}
+        }
