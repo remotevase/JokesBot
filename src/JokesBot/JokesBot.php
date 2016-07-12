@@ -18,15 +18,15 @@ public function onCommand(CommandSender $sender, Command $command, $label, array
         switch(strtolower($command->getName())){
             case "Jokes":
             if($sender instanceof Player(){
-            $sender->sendMessage($this->prefix . "What kind of joke? \n Your response choices: Knock-Knock-Joke);
+            $sender->sendMessage($this->prefix . "What kind of joke? \n Your response choices: Knock Knock Joke);
             $this->getMessage;
-            if($this->Message = "Knock-Knock-Joke"){
+            if($this->Message = "Knock Knock Joke"){
             $chance = rand(0,9);
             	switch($chance){
 			      case 1:
-			      	$sender->sendMessage($this->prefix . "Ho-ho \n Your response choices: Ho-ho who? or Cancel Joke");
+			      	$sender->sendMessage($this->prefix . "Ho ho \n Your response choices: Ho ho who? or Cancel Joke");
 			      	$this->getMessage;
-			      	if($this->Message = "Ho-ho who?"){
+			      	if($this->Message = "Ho ho who?"){
 			      	$sender->sendMessage($this->prefix . "You know, your Santa impression could use a little work.");
 			      	}
 			      	else if(this->Message = "Cancel Joke"){
